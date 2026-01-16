@@ -51,14 +51,11 @@ round(wdpa$REP_AREA, digits = 3)
 
 # select needed rows
 
-wdpa_ap <- wdpa[wdpa$NAME_ENG %in% c('Akagera', 'Bangweulu', 'Bazaruto', 'Badingilo', 'Badingilo Extension', 'Boma', 'Boma Extension', 'Chinko', 'Ennedi Massif: Natural and Cultural Landscape', 'Gambella', 'Garamba', 'Iona National Park', 'Kafue', 'Nkhotakota Wildlife Reserve', 'Kundelungu', 'Liuwa Plain', 'Liwonde National Park', 'Majete Wildlife Reserve', 'Mangochi', 'Matusadona', 'Nkhotakota Wildlife Reserve
-', 'Nyungwe', 'Odzala Kokoua', 'Pendjari', 'Siniaka-Minia', 'W (Benin)', 'Zakouma'), ]
-
-# Remove Kafue forest reserve (not managed by AP but has the same name and is selected incedentaly by the fxn above)
-wdpa_ap[-c(14), ]
+wdpa_ap <- wdpa[wdpa$SITE_ID %in% c('862', '2337', '555583110', '4106', '802', '1371', '555583108', '555781120', '555622048', '13704', '1083', '347', '1085', '1084', '1089', '2316', '2319', '33157', '1107', '2318', '9148', '555555585', '2253', '555781119', '12201', '641'), ]
 
 # create export files
 
 st_write(wdpa, "wdpa_africa.shp") #contains all of the wdpa areas in Africa in one shape file
 
 st_write(wdpa_ap, "wdpa_ap.shp") #contains only the areas managed by African Parks
+
