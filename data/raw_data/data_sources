@@ -5,3 +5,7 @@ UNEP-WCMC and IUCN (2026), Protected Planet: The World Database on Protected Are
 
 African Continent Polygon --
 https://geoportal.icpac.net/layers/geonode%3Aafr_g2014_2013_0#more
+
+GBIF Bird Occurences (Rwanda, South Sudan, Zambia, CAR, Chad, Ethiopia, DRC, Angola, Malawi, Zimbabwe, Congo, and Benin w/ coordinates (2015 - 2025)) --
+(Raw file is too large to be digested by GitHub)(Link to GBIF download: https://api.gbif.org/v1/occurrence/download/request/0014526-260108223611665.zip)
+GBIF.org (16 January 2026) GBIF Occurrence Download https://doi.org/10.15468/dl.c8n4h3
