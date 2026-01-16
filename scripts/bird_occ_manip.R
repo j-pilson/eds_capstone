@@ -47,6 +47,13 @@ birds_slim <- birds_slim %>%
 birds_slim <- birds_slim %>%
   filter(!is.na(eventDate))
 
+# create and export csv with only the 'issue' column to be processed in python
+
+birds_issue <- birds_slim %>%
+  select(issue)
+
+write_csv(birds_issue, "C://Users//cpils//Documents//EDS Cert//Capstone//Data//Processed Data//GBIF Bird Data//birds_issue.csv", append = FALSE, col_names = TRUE)
+
 # filter out observations that have certain associated issues
 
 issue_na <- birds_slim %>% 
@@ -61,4 +68,5 @@ write_csv(birds_slim, "C://Users//cpils//Documents//EDS Cert//Capstone//Data//Pr
   
   
   
+
   
