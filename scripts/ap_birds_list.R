@@ -23,6 +23,7 @@ library(vroom)
 # load data
 
 ap_birds <- vroom("C://Users//cpils//Documents//EDS Cert//Capstone//Data//Processed Data//GBIF Bird Data//Bird Observations shp//ap_bird_obs.csv")
+iucn <- vroom("C://Users//cpils//Documents//EDS Cert//Capstone//Data//Raw Data//IUCN Bird List//assessments.csv")
 
 # generate a list of AP bird species
 
@@ -41,7 +42,15 @@ ap_birds_df$species <- paste(ap_birds_df$c..Passer....Corvus....Ploceus....Corvu
 birds_ap <- ap_birds_df %>%
   select(species)
 
+# add iucn & habitat info
+
+iucn_slim <- iucn %>%
+  select(scientificName, habitat, redlistCategory)
+
+birds_join <- left_join(birds_ap, iucn_slim, by = c("species" = "scientificName"))
+
 # export list
 
 write_csv(birds_ap, "C://Users//cpils//Documents//EDS Cert//Capstone//Data//Processed Data//GBIF Bird Data//Bird Observations shp//ap_bird_list.csv")
+
 
