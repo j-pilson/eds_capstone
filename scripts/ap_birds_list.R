@@ -51,6 +51,6 @@ birds_join <- left_join(birds_ap, iucn_slim, by = c("species" = "scientificName"
 
 # export list
 
-write_csv(birds_ap, "C://Users//cpils//Documents//EDS Cert//Capstone//Data//Processed Data//GBIF Bird Data//Bird Observations shp//ap_bird_list.csv")
+write_csv(birds_join, "C://Users//cpils//Documents//EDS Cert//Capstone//Data//Processed Data//AP Bird list//ap_bird_list.csv")
 
 
