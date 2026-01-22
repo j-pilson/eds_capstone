@@ -7,6 +7,7 @@ if (!require(tidyterra)) install.packages("tidyterra")
 if (!require(knitr)) install.packages("knitr")
 if (!require(dplyr)) install.packages("dplyr")
 if (!require(tidyverse)) install.packages("tidyverse")
+if (!require(naniar)) install.packages("naniar")
 
 
 #load packages
@@ -19,6 +20,7 @@ library(tidyterra)
 library(knitr)       
 library(dplyr)
 library(tidyverse)
+library(naniar)
 
 # load data
 
@@ -27,6 +29,14 @@ wdpa0 <- st_read("C://Users//cpils//Documents//EDS Cert//Capstone//Data//Raw Dat
 wdpa1 <- st_read("C://Users//cpils//Documents//EDS Cert//Capstone//Data//Raw Data//WDPA Africa//WDPA_WDOECM_Jan2026_Public_AF_shp_1//WDPA_WDOECM_Jan2026_Public_AF_shp-polygons.shp")
 
 wdpa2 <- st_read("C://Users//cpils//Documents//EDS Cert//Capstone//Data//Raw Data//WDPA Africa//WDPA_WDOECM_Jan2026_Public_AF_shp_2//WDPA_WDOECM_Jan2026_Public_AF_shp-polygons.shp")
+
+# investigate missingness
+
+vis_miss(wdpa0)
+
+vis_miss(wdpa1)
+
+vis_miss(wdpa2)
 
 # filter for needed columns
 
@@ -58,4 +68,5 @@ wdpa_ap <- wdpa[wdpa$SITE_ID %in% c('862', '2337', '555583110', '4106', '802', '
 st_write(wdpa, "wdpa_africa.shp") #contains all of the wdpa areas in Africa in one shape file
 
 st_write(wdpa_ap, "wdpa_ap.shp") #contains only the areas managed by African Parks
+
 
