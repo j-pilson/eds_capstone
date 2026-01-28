@@ -1,10 +1,9 @@
 # install packages
 
-if (!require(sf)) install.packages("sf")
-if (!require(ggplot2)) install.packages("ggplot2")
+if (!require(dplyr)) install.packages("dplyr")
 if (!require(terra)) install.packages("terra")
 if (!require(tidyterra)) install.packages("tidyterra")
-if (!require(knitr)) install.packages("knitr")
+if (!require(sf)) install.packages("sf")
 if (!require(dplyr)) install.packages("dplyr")
 if (!require(tidyverse)) install.packages("tidyverse")
 if (!require(naniar)) install.packages("naniar")
@@ -12,14 +11,12 @@ if (!require(naniar)) install.packages("naniar")
 
 #load packages
 
-library(sf)          
-library(ggplot2)     
-library(dplyr)       
-library(terra)       
-library(tidyterra)   
-library(knitr)       
-library(dplyr)
-library(tidyverse)
+library(dplyr)          
+library(terra)     
+library(tidyterra)       
+library(sf)       
+library(dplyr)   
+library(tidyverse)       
 library(naniar)
 
 # load data
@@ -68,5 +65,6 @@ wdpa_ap <- wdpa[wdpa$SITE_ID %in% c('862', '2337', '555583110', '4106', '802', '
 st_write(wdpa, "wdpa_africa.shp") #contains all of the wdpa areas in Africa in one shape file
 
 st_write(wdpa_ap, "wdpa_ap.shp") #contains only the areas managed by African Parks
+
 
 
