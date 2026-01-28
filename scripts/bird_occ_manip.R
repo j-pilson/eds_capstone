@@ -6,7 +6,8 @@ if (!require(tidyterra)) install.packages("tidyterra")
 if (!require(readr)) install.packages("readr")
 if (!require(tidyverse)) install.packages("tidyverse")
 if (!require(vroom)) install.packages("vroom")
-
+if (!require(ggplot2)) install.packages("ggplot2")
+if (!require(naniar)) install.packages("naniar")
 
 #load packages
 
@@ -16,6 +17,8 @@ library(tidyterra)
 library(readr)        
 library(tidyverse) 
 library(vroom)
+library(ggplot2)
+library(naniar)
 
 # load data
 
@@ -40,6 +43,10 @@ birds_slim <- birds_slim %>%
 birds_slim <- birds_slim %>%
   filter(!is.na(eventDate))
 
+# examine missingness
+
+gg_miss_upset(birds_slim)
+
 # create and export csv with only the 'issue' column to be processed in python
 
 birds_issue <- birds_slim %>%
@@ -55,4 +62,5 @@ issue_na <- birds_slim %>%
 # export cleaned csv
 
 write_csv(birds_slim, "C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/Bird Occurences - AP Countries (processed)/birds_slim.csv", append = FALSE, col_names = TRUE)
+
 
