@@ -61,6 +61,4 @@ issue_na <- birds_slim %>%
 
 # export cleaned csv
 
-write_csv(birds_slim, "C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/Bird Occurences - AP Countries (processed)/birds_slim.csv", append = FALSE, col_names = TRUE)
-
-
+write_csv(issue_na, "C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/Bird Occurences - AP Countries (processed)/afbirds_obs.csv", append = FALSE, col_names = TRUE)
