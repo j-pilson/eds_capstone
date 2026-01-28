@@ -1,32 +1,27 @@
 # install packages
 
-if (!require(sf)) install.packages("sf")
-if (!require(ggplot2)) install.packages("ggplot2")
+if (!require(dplyr)) install.packages("dplyr")
 if (!require(terra)) install.packages("terra")
 if (!require(tidyterra)) install.packages("tidyterra")
-if (!require(knitr)) install.packages("knitr")
+if (!require(readr)) install.packages("readr")
 if (!require(dplyr)) install.packages("dplyr")
 if (!require(tidyverse)) install.packages("tidyverse")
 if (!require(vroom)) install.packages("vroom")
-if (!require(arrow)) install.packages("arrow")
 
 
-# load packages
+#load packages
 
-library(sf)          
-library(ggplot2)     
-library(dplyr)       
-library(terra)       
-library(tidyterra)   
-library(knitr)       
-library(dplyr)
-library(tidyverse)
+library(dplyr)          
+library(terra)     
+library(tidyterra)       
+library(readr)       
+library(dplyr)   
+library(tidyverse) 
 library(vroom)
-library(arrow)
 
 # load data
 
-af_birds <- vroom("C://Users//cpils//Documents//EDS Cert//Capstone//Data//Raw Data//Bird Occurences - AP Countries//0014526-260108223611665.csv")
+af_birds <- vroom("C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/Bird Occurences - AP Countries (raw)/0014526-260108223611665.csv")
 
 # examine data
 
@@ -52,7 +47,7 @@ birds_slim <- birds_slim %>%
 birds_issue <- birds_slim %>%
   select(issue)
 
-write_csv(birds_issue, "C://Users//cpils//Documents//EDS Cert//Capstone//Data//Processed Data//GBIF Bird Data//birds_issue.csv", append = FALSE, col_names = TRUE)
+write_csv(birds_issue, "C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/Bird Occurences - AP Countries (processed)/birds_issue.csv", append = FALSE, col_names = TRUE)
 
 # filter out observations that have certain associated issues
 
@@ -61,12 +56,4 @@ issue_na <- birds_slim %>%
 
 # export cleaned csv
 
-write_csv(birds_slim, "C://Users//cpils//Documents//EDS Cert//Capstone//Data//Processed Data//GBIF Bird Data//birds_slim.csv", append = FALSE, col_names = TRUE)
-
-
-  
-  
-  
-  
-
-  
+write_csv(birds_slim, "C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/Bird Occurences - AP Countries (processed)/birds_slim.csv", append = FALSE, col_names = TRUE)
