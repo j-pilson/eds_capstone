@@ -21,8 +21,8 @@ library(vroom)
 
 # load data
 
-ap_birds <- vroom("C://Users//cpils//Documents//EDS Cert//Capstone//Data//Processed Data//GBIF Bird Data//Bird Observations shp//ap_bird_obs.csv")
-iucn <- vroom("C://Users//cpils//Documents//EDS Cert//Capstone//Data//Raw Data//IUCN Bird List//assessments.csv")
+ap_birds <- vroom("C:/Users/cpils/Documents/EDS Cert/Capstone/Data/Processed Data/GBIF Bird Data/Bird Observations shp/ap_bird_obs.csv")
+iucn <- vroom("C:/Users/cpils/Documents/EDS Cert/Capstone/Data/Raw Data/IUCN Bird List/assessments.csv")
 
 # generate a list of AP bird species
 
@@ -50,7 +50,5 @@ birds_join <- left_join(birds_ap, iucn_slim, by = c("species" = "scientificName"
 
 # export list
 
-write_csv(birds_join, "C://Users//cpils//Documents//EDS Cert//Capstone//Data//Processed Data//AP Bird list//ap_bird_list.csv")
-
-
+write_csv(birds_join, "C:/Users/cpils/Documents/EDS Cert/Capstone/Data/Processed Data/AP Bird list/ap_bird_list.csv")
 
