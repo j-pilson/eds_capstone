@@ -4,7 +4,6 @@ if (!require(dplyr)) install.packages("dplyr")
 if (!require(terra)) install.packages("terra")
 if (!require(tidyterra)) install.packages("tidyterra")
 if (!require(sf)) install.packages("sf")
-if (!require(dplyr)) install.packages("dplyr")
 if (!require(tidyverse)) install.packages("tidyverse")
 if (!require(naniar)) install.packages("naniar")
 if (!require(readr)) install.packages("readr")
@@ -15,8 +14,7 @@ if (!require(readr)) install.packages("readr")
 library(dplyr)          
 library(terra)     
 library(tidyterra)       
-library(sf)       
-library(dplyr)   
+library(sf)        
 library(tidyverse)       
 library(naniar)
 library(readr)
@@ -129,4 +127,5 @@ st_write(wdpa_all, "C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Source
 st_write(af_all, "C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/WDPA (processed)/wdpa_africa.shp") #contains all of the WDPA areas in Africa in one shape file
 
 st_write(wdpa_ap, "C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/WDPA (processed)/wdpa_ap.shp") #contains only the areas managed by African Parks
+
 
