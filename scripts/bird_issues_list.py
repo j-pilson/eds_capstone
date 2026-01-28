@@ -12,6 +12,3 @@ with open("C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/Bird Oc
            f.write("Issues\n")
            for issue in birdIssues:
                f.write(issue + "\n")
-
-
-
