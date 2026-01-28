@@ -1,28 +1,21 @@
 # install packages
 
-if (!require(sf)) install.packages("sf")
-if (!require(ggplot2)) install.packages("ggplot2")
+if (!require(dplyr)) install.packages("dplyr")
 if (!require(terra)) install.packages("terra")
 if (!require(tidyterra)) install.packages("tidyterra")
-if (!require(knitr)) install.packages("knitr")
+if (!require(readr)) install.packages("readr")
 if (!require(dplyr)) install.packages("dplyr")
 if (!require(tidyverse)) install.packages("tidyverse")
-if (!require(vroom)) install.packages("vroom")
-if (!require(arrow)) install.packages("arrow")
 
 
-# load packages
+#load packages
 
-library(sf)          
-library(ggplot2)     
-library(dplyr)       
-library(terra)       
-library(tidyterra)   
-library(knitr)       
-library(dplyr)
+library(dplyr)          
+library(terra)     
+library(tidyterra)       
+library(readr)       
+library(dplyr)   
 library(tidyverse)
-library(vroom)
-library(arrow)
 
 # load data
 
@@ -70,3 +63,4 @@ write_csv(birds_slim, "C://Users//cpils//Documents//EDS Cert//Capstone//Data//Pr
   
 
   
+
