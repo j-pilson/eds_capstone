@@ -1,6 +1,5 @@
 # install packages
 
-if (!require(dplyr)) install.packages("dplyr")
 if (!require(terra)) install.packages("terra")
 if (!require(tidyterra)) install.packages("tidyterra")
 if (!require(readr)) install.packages("readr")
@@ -10,8 +9,7 @@ if (!require(vroom)) install.packages("vroom")
 
 
 #load packages
-
-library(dplyr)          
+          
 library(terra)     
 library(tidyterra)       
 library(readr)       
@@ -51,4 +49,5 @@ birds_join <- left_join(birds_ap, iucn_slim, by = c("species" = "scientificName"
 # export list
 
 write_csv(birds_join, "C:/Users/cpils/Documents/EDS Cert/Capstone/Data/Processed Data/AP Bird list/ap_bird_list.csv")
+
 
