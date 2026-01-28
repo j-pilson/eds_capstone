@@ -21,7 +21,7 @@ library(vroom)
 
 # load data
 
-af_birds <- vroom("C://Users//cpils//Documents//EDS Cert//Capstone//Data//Raw Data//Bird Occurences - AP Countries//0014526-260108223611665.csv")
+write_csv(birds_join, "C:/Users/cpils/Documents/EDS Cert/Capstone/Data/Processed Data/AP Bird list/ap_bird_list.csv")
 
 # examine data
 
@@ -47,7 +47,7 @@ birds_slim <- birds_slim %>%
 birds_issue <- birds_slim %>%
   select(issue)
 
-write_csv(birds_issue, "C://Users//cpils//Documents//EDS Cert//Capstone//Data//Processed Data//GBIF Bird Data//birds_issue.csv", append = FALSE, col_names = TRUE)
+write_csv(birds_issue, "C:/Users/cpils/Documents/EDS Cert/Capstone/Data/Processed Data/GBIF Bird Data/birds_issue.csv", append = FALSE, col_names = TRUE)
 
 # filter out observations that have certain associated issues
 
@@ -56,14 +56,4 @@ issue_na <- birds_slim %>%
 
 # export cleaned csv
 
-write_csv(birds_slim, "C://Users//cpils//Documents//EDS Cert//Capstone//Data//Processed Data//GBIF Bird Data//birds_slim.csv", append = FALSE, col_names = TRUE)
-
-
-  
-  
-  
-  
-
-  
-
-
+write_csv(birds_slim, "C:/Users/cpils/Documents/EDS Cert/Capstone/Data/Processed Data/GBIF Bird Data/birds_slim.csv", append = FALSE, col_names = TRUE)
