@@ -21,37 +21,29 @@ library(tidyverse)
 library(naniar)
 library(readr)
 
-# load data
-
-wdpa0 <- st_read("C:/Users/cpils/Documents/EDS Cert/Capstone/Data/Raw Data/WDPA Africa/WDPA_WDOECM_Jan2026_Public_AF_shp_0/WDPA_WDOECM_Jan2026_Public_AF_shp-polygons.shp")
-
-wdpa1 <- st_read("C:/Users/cpils/Documents/EDS Cert/Capstone/Data/Raw Data/WDPA Africa/WDPA_WDOECM_Jan2026_Public_AF_shp_1/WDPA_WDOECM_Jan2026_Public_AF_shp-polygons.shp")
-
-wdpa2 <- st_read("C:/Users/cpils/Documents/EDS Cert/Capstone/Data/Raw Data/WDPA Africa/WDPA_WDOECM_Jan2026_Public_AF_shp_2/WDPA_WDOECM_Jan2026_Public_AF_shp-polygons.shp")
-
 # load Africa data
 
-af0 <- st_read("C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/WDPA (raw)/Africa/WDPA_WDOECM_Jan2026_Public_AF_shp_0")
+af0 <- st_read("C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/WDPA (raw)/Africa/WDPA_WDOECM_Jan2026_Public_AF_shp_0/WDPA_WDOECM_Jan2026_Public_AF_shp-polygons.shp")
 
-af1 <- st_read("C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/WDPA (raw)/Africa/WDPA_WDOECM_Jan2026_Public_AF_shp_1")
+af1 <- st_read("C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/WDPA (raw)/Africa/WDPA_WDOECM_Jan2026_Public_AF_shp_1/WDPA_WDOECM_Jan2026_Public_AF_shp-polygons.shp")
 
-af2 <- st_read("C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/WDPA (raw)/Africa/WDPA_WDOECM_Jan2026_Public_AF_shp_2")
+af2 <- st_read("C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/WDPA (raw)/Africa/WDPA_WDOECM_Jan2026_Public_AF_shp_2/WDPA_WDOECM_Jan2026_Public_AF_shp-polygons.shp")
 
 # load Europe data
 
-eu0 <- st_read("C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/WDPA (raw)/Europe/WDPA_WDOECM_Jan2026_Public_AS_shp_0")
+eu0 <- st_read("C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/WDPA (raw)/Europe/WDPA_WDOECM_Jan2026_Public_AS_shp_0/WDPA_WDOECM_Jan2026_Public_AS_shp-polygons.shp")
 
-eu1 <- st_read("C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/WDPA (raw)/Europe/WDPA_WDOECM_Jan2026_Public_AS_shp_1")
+eu1 <- st_read("C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/WDPA (raw)/Europe/WDPA_WDOECM_Jan2026_Public_AS_shp_1/WDPA_WDOECM_Jan2026_Public_AS_shp-polygons.shp")
 
-eu2 <- st_read("C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/WDPA (raw)/Europe/WDPA_WDOECM_Jan2026_Public_AS_shp_2")
+eu2 <- st_read("C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/WDPA (raw)/Europe/WDPA_WDOECM_Jan2026_Public_AS_shp_2/WDPA_WDOECM_Jan2026_Public_AS_shp-polygons.shp")
 
 # load Asia & Pacific data
 
-asp0 <- st_read("C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/WDPA (raw)/Asia and Pacific/WDPA_WDOECM_Jan2026_Public_AS_shp_0")
+asp0 <- st_read("C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/WDPA (raw)/Asia and Pacific/WDPA_WDOECM_Jan2026_Public_AS_shp_0/WDPA_WDOECM_Jan2026_Public_AS_shp-polygons.shp")
 
-asp1 <- st_read("C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/WDPA (raw)/Asia and Pacific/WDPA_WDOECM_Jan2026_Public_AS_shp_1")
+asp1 <- st_read("C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/WDPA (raw)/Asia and Pacific/WDPA_WDOECM_Jan2026_Public_AS_shp_1/WDPA_WDOECM_Jan2026_Public_AS_shp-polygons.shp")
 
-asp2 <- st_read("C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/WDPA (raw)/Asia and Pacific/WDPA_WDOECM_Jan2026_Public_AS_shp_2")
+asp2 <- st_read("C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/WDPA (raw)/Asia and Pacific/WDPA_WDOECM_Jan2026_Public_AS_shp_2/WDPA_WDOECM_Jan2026_Public_AS_shp-polygons.shp")
 
 # investigate missingness
 
