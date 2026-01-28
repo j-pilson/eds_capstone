@@ -4,7 +4,6 @@ if (!require(dplyr)) install.packages("dplyr")
 if (!require(terra)) install.packages("terra")
 if (!require(tidyterra)) install.packages("tidyterra")
 if (!require(readr)) install.packages("readr")
-if (!require(dplyr)) install.packages("dplyr")
 if (!require(tidyverse)) install.packages("tidyverse")
 if (!require(vroom)) install.packages("vroom")
 
@@ -14,8 +13,7 @@ if (!require(vroom)) install.packages("vroom")
 library(dplyr)          
 library(terra)     
 library(tidyterra)       
-library(readr)       
-library(dplyr)   
+library(readr)        
 library(tidyverse) 
 library(vroom)
 
@@ -57,3 +55,4 @@ issue_na <- birds_slim %>%
 # export cleaned csv
 
 write_csv(birds_slim, "C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/Bird Occurences - AP Countries (processed)/birds_slim.csv", append = FALSE, col_names = TRUE)
+
