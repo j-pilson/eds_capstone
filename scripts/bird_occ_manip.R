@@ -6,7 +6,6 @@ if (!require(tidyterra)) install.packages("tidyterra")
 if (!require(readr)) install.packages("readr")
 if (!require(dplyr)) install.packages("dplyr")
 if (!require(tidyverse)) install.packages("tidyverse")
-if (!require(vroom)) install.packages("vroom")
 
 
 #load packages
@@ -16,8 +15,7 @@ library(terra)
 library(tidyterra)       
 library(readr)       
 library(dplyr)   
-library(tidyverse) 
-library(vroom)
+library(tidyverse)
 
 # load data
 
@@ -65,5 +63,4 @@ write_csv(birds_slim, "C://Users//cpils//Documents//EDS Cert//Capstone//Data//Pr
   
 
   
-
 
