@@ -23,11 +23,11 @@ library(readr)
 
 # load data
 
-wdpa0 <- st_read("C://Users//cpils//Documents//EDS Cert//Capstone//Data//Raw Data//WDPA Africa//WDPA_WDOECM_Jan2026_Public_AF_shp_0//WDPA_WDOECM_Jan2026_Public_AF_shp-polygons.shp")
+wdpa0 <- st_read("C:/Users/cpils/Documents/EDS Cert/Capstone/Data/Raw Data/WDPA Africa/WDPA_WDOECM_Jan2026_Public_AF_shp_0/WDPA_WDOECM_Jan2026_Public_AF_shp-polygons.shp")
 
-wdpa1 <- st_read("C://Users//cpils//Documents//EDS Cert//Capstone//Data//Raw Data//WDPA Africa//WDPA_WDOECM_Jan2026_Public_AF_shp_1//WDPA_WDOECM_Jan2026_Public_AF_shp-polygons.shp")
+wdpa1 <- st_read("C:/Users/cpils/Documents/EDS Cert/Capstone/Data/Raw Data/WDPA Africa/WDPA_WDOECM_Jan2026_Public_AF_shp_1/WDPA_WDOECM_Jan2026_Public_AF_shp-polygons.shp")
 
-wdpa2 <- st_read("C://Users//cpils//Documents//EDS Cert//Capstone//Data//Raw Data//WDPA Africa//WDPA_WDOECM_Jan2026_Public_AF_shp_2//WDPA_WDOECM_Jan2026_Public_AF_shp-polygons.shp")
+wdpa2 <- st_read("C:/Users/cpils/Documents/EDS Cert/Capstone/Data/Raw Data/WDPA Africa/WDPA_WDOECM_Jan2026_Public_AF_shp_2/WDPA_WDOECM_Jan2026_Public_AF_shp-polygons.shp")
 
 # investigate missingness
 
@@ -67,7 +67,3 @@ wdpa_ap <- wdpa[wdpa$SITE_ID %in% c('862', '2337', '555583110', '4106', '802', '
 st_write(wdpa, "wdpa_africa.shp") #contains all of the wdpa areas in Africa in one shape file
 
 st_write(wdpa_ap, "wdpa_ap.shp") #contains only the areas managed by African Parks
-
-
-
-
