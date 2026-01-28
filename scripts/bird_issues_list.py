@@ -1,4 +1,4 @@
-with open("C:/Users/cpils/Documents/EDS Cert/Capstone/birds_issue.csv", 'r') as f:
+with open("C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/Bird Occurences - AP Countries (processed)/birds_issue.csv", 'r') as f:
     data = f.readlines()
 
 birdIssues = set()
@@ -8,9 +8,10 @@ for entry in data[1:]: # Removing header line with string slicing
     for issue in issues: # Iterate through each issue
         birdIssues.add(issue.strip()) # Strip the issue and add it to the set
 
-with open("C:/Users/cpils/Documents/EDS Cert/Capstone/allBirdIssues.csv", 'w') as f:
+with open("C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/Bird Occurences - AP Countries (processed)/allBirdIssues.csv", 'w') as f:
            f.write("Issues\n")
            for issue in birdIssues:
                f.write(issue + "\n")
+
 
 
