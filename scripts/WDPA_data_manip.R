@@ -112,14 +112,6 @@ asp_all <- asp0_f %>%
   bind_rows(asp1_f) %>%
   bind_rows(asp2_f)
 
-# round values in the REP_AREA column
-
-round(af_all$REP_AREA, digits = 3)
-
-round(eu_all$REP_AREA, digits = 3)
-
-round(asp_all$REP_AREA, digits = 3)
-
 # join all shape files for Africa, Europe, Asia, & the Pacific
 
 wdpa_all <- af_all %>%
@@ -137,3 +129,4 @@ st_write(wdpa_all, "C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Source
 st_write(af_all, "C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/WDPA (processed)/wdpa_africa.shp") #contains all of the WDPA areas in Africa in one shape file
 
 st_write(wdpa_ap, "C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/WDPA (processed)/wdpa_ap.shp") #contains only the areas managed by African Parks
+
