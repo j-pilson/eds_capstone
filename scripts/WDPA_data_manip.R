@@ -7,6 +7,7 @@ if (!require(sf)) install.packages("sf")
 if (!require(tidyverse)) install.packages("tidyverse")
 if (!require(naniar)) install.packages("naniar")
 if (!require(readr)) install.packages("readr")
+if (!require(ggplot2)) install.packages("ggplot2")
 
 
 #load packages
@@ -18,6 +19,7 @@ library(sf)
 library(tidyverse)       
 library(naniar)
 library(readr)
+library(ggplot2)
 
 # load Africa data
 
@@ -127,5 +129,6 @@ st_write(wdpa_all, "C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Source
 st_write(af_all, "C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/WDPA (processed)/wdpa_africa.shp") #contains all of the WDPA areas in Africa in one shape file
 
 st_write(wdpa_ap, "C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/WDPA (processed)/wdpa_ap.shp") #contains only the areas managed by African Parks
+
 
 
