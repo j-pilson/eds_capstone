@@ -38,14 +38,22 @@ birdlife_slim <- bird_life %>%
 
 birds_join <- left_join(ap_list, birdlife_slim, by = c("species" = "Scientific name"))
 
+# rename columns
+
+final_birds <- birds_join %>%
+  rename("commonName" = "Common name") %>%
+  rename("scientificName" = "species") %>%
+  rename("redlistCategory" = "RL Category") %>%
+  rename("migratoryStatus" = "Migratory status") %>%
+  rename("popTrend" = "Current population trend")
+
 # reorder columns
 
-birds_join <- birds_join %>%
-  relocate("Common name") %>%
-  relocate("Freq", .after = "Current population trend")
+final_birds <- final_birds %>%
+  relocate("commonName") %>%
+  relocate("Freq", .after = "popTrend")
 
 # export list
 
-write_csv(birds_join, "C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/AP Birds List (processed)/ap_bird_list.csv")
-
+write_csv(final_birds, "C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/AP Birds List (processed)/ap_bird_list.csv")
 
