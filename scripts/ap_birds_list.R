@@ -38,7 +38,14 @@ birdlife_slim <- bird_life %>%
 
 birds_join <- left_join(ap_list, birdlife_slim, by = c("species" = "Scientific name"))
 
+# reorder columns
+
+birds_join <- birds_join %>%
+  relocate("Common name") %>%
+  relocate("Freq", .after = "Current population trend")
+
 # export list
 
 write_csv(birds_join, "C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/AP Birds List (processed)/ap_bird_list.csv")
+
 
