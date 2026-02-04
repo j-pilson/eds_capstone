@@ -57,8 +57,9 @@ write_csv(birds_issue, "C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data So
 # filter out observations that have certain associated issues
 
 issue_na <- birds_slim %>% 
-  filter(!grepl('TAXON_MATCH_FUZZY|RECORDED_DATE_INVALID|CONTINENT_COORDINATE_MISMATCH|TAXON_MATCH_HIGHERRANK', issue))
+  filter(!grepl('RECORDED_DATE_INVALID|CONTINENT_COORDINATE_MISMATCH|TAXON_MATCH_HIGHERRANK', issue))
 
 # export cleaned csv
 
 write_csv(issue_na, "C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/Bird Occurences - AP Countries (processed)/afbirds_obs.csv", append = FALSE, col_names = TRUE)
+
