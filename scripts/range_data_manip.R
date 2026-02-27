@@ -25,7 +25,7 @@ aquila_nipalensis_seasonal <- range_slim[range_slim$sci_name %in% c('Aquila nipa
 
 ardeola_idae_seasonal <- range_slim[range_slim$sci_name %in% c('Ardeola idae'), ]
 
-gyps_rueppelli_seasonal <- range_slim[range_slim$sci_name %in% c('Gyps rueppelli'), ]
+gyps_rueppelli_seasonal <- range_slim[range_slim$sci_name %in% c('Gyps rueppelli'), ] # this species' scientific name is written as both Gyps rueppelli and Gyps rueppellii -- the BirdLife dataset uses Gyps rueppelli
 
 neophron_percnopterus_seasonal <- range_slim[range_slim$sci_name %in% c('Neophron percnopterus'), ]
 
@@ -38,3 +38,4 @@ st_write(ardeola_idae_seasonal, "C:/Users/cpils/Documents/EDS Cert/Capstone/Fina
 st_write(gyps_rueppelli_seasonal, "C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/BirdLife Range Data (processed)/gyps_rueppelli_seasonal.shp")
 
 st_write(neophron_percnopterus_seasonal, "C:/Users/cpils/Documents/EDS Cert/Capstone/Final Data Sources/BirdLife Range Data (processed)/neophron_percnopterus_seasonal.shp")
+
