@@ -1,25 +1,12 @@
 # install packages
 
 if (!require(dplyr)) install.packages("dplyr")
-if (!require(terra)) install.packages("terra")
-if (!require(tidyterra)) install.packages("tidyterra")
 if (!require(sf)) install.packages("sf")
-if (!require(tidyverse)) install.packages("tidyverse")
-if (!require(naniar)) install.packages("naniar")
-if (!require(readr)) install.packages("readr")
-if (!require(ggplot2)) install.packages("ggplot2")
-
 
 # load packages
 
 library(dplyr)          
-library(terra)     
-library(tidyterra)       
-library(sf)       
-library(tidyverse)       
-library(naniar)
-library(readr)
-library(ggplot2)
+library(sf)   
 
 # Africa Paths - update for your file locations
 
@@ -116,19 +103,15 @@ asp_all <- asp0_f %>%
   bind_rows(asp1_f) %>%
   bind_rows(asp2_f)
 
-# join all shape files for Africa, Europe, Asia, & the Pacific
-
-wdpa_all <- af_all %>%
-  bind_rows(eu_all) %>%
-  bind_rows(asp_all)
-
-# select needed rows from Africa shape file
+# select rows containing land managed by African Parks from Africa shape file
 
 wdpa_ap <- af_all[af_all$SITE_ID %in% c('862', '2337', '555583110', '4106', '802', '1371', '555583108', '555781120', '555622048', '13704', '1083', '347', '1085', '1084', '1089', '2316', '2319', '33157', '1107', '2318', '9148', '555555585', '2253', '555781119', '12201', '641'), ]
 
-# final file paths - update for your file locations
+# file save paths - update for your desired save location
 
-wdpa_all_path <- 
+wdpa_eu_path <- 
+
+wdpa_asp_path <- 
 
 wdpa_af_path <- 
 
@@ -136,7 +119,9 @@ wdpa_ap_path <-
 
 # create export files
 
-st_write(wdpa_all, wdpa_all_path) #contains all of the WDPA areas in Africa, Europe, Asia, & the Pacific
+st_write(eu_all, wdpa_eu_path) #contains all of the WDPA areas in Europe
+
+st_write(asp_all, wdpa_asp_path) #contains all of the WDPA areas in Asia & the Pacific
 
 st_write(af_all, wdpa_af_path) #contains all of the WDPA areas in Africa in one shape file
 
