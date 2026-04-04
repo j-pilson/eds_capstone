@@ -1,3 +1,6 @@
+# purpose:
+    # compile geospatial data for protected land throughout the range of African migratory birds
+
 # install packages
 
 if (!require(dplyr)) install.packages("dplyr")
