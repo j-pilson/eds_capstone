@@ -9,6 +9,7 @@ Data for this project was acquired from the following sources. Some sources used
 
 * [https://geoportal.icpac.net/layers/geonode%3Aafr_g2014_2013_0#more](https://geoportal.icpac.net/layers/geonode%3Aafr_g2014_2013_0#more)
 * Acquired from Intergovernmental Authority on Development (IGAD)’s Climate Predictions and Applications Centre (ICPAC)
+* *Location*: raw_data
 
 
 ## **World Countries Polygon**
@@ -17,6 +18,7 @@ Data for this project was acquired from the following sources. Some sources used
 
 * [https://hub.arcgis.com/datasets/esri::world-countries/about](https://hub.arcgis.com/datasets/esri::world-countries/about)
 * Only the continents used in this analysis are uploaded due to file size constraints
+* *Location*: raw_data
 
 ## **WDPA Data**
 
