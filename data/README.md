@@ -16,7 +16,7 @@ Data for this project was acquired from the following sources. Some sources used
 
 
 * [https://hub.arcgis.com/datasets/esri::world-countries/about](https://hub.arcgis.com/datasets/esri::world-countries/about)
-
+* Only the continents used in this analysis are uploaded due to file size constraints
 
 ## **WDPA Data**
 
