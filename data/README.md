@@ -58,6 +58,7 @@ Data for this project was acquired from the following sources. Some sources used
         * VU = Vulnerable
         * EN = Endangered
         * CR = Critically Endangered
+* Data cannot be uploaded due to licensing but the metadata/data dictionary document can be found in the metadata folder
 
 
 ## **GBIF Data - All Bird Observations in Countries in Which AP Manages Land (2015-2025)**
