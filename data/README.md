@@ -41,6 +41,7 @@ Data for this project was acquired from the following sources. Some sources used
 
 * [https://datazone.birdlife.org/contact-us/request-our-data](https://datazone.birdlife.org/contact-us/request-our-data)
 * Acquired through BirdLife’s data request form
+* Data cannot be uploaded due to licensing but the metadata/data dictionary document can be found in the metadata folder
 
 
 ## **BirdLife Bird Species List**
