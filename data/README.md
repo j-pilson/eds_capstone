@@ -41,7 +41,7 @@ Data for this project was acquired from the following sources. Some sources used
 
 * [https://datazone.birdlife.org/contact-us/request-our-data](https://datazone.birdlife.org/contact-us/request-our-data)
 * Acquired through BirdLife’s data request form
-* Data cannot be uploaded due to licensing but the metadata/data dictionary document can be found in the metadata folder
+* Data cannot be uploaded due to licensing but the metadata/data dictionary document can be found in the metadata folder (Metadata_BirdLife_HBW_Bird_Maps_2025)
 
 
 ## **BirdLife Bird Species List**
@@ -58,7 +58,21 @@ Data for this project was acquired from the following sources. Some sources used
         * VU = Vulnerable
         * EN = Endangered
         * CR = Critically Endangered
-* Data cannot be uploaded due to licensing but the metadata/data dictionary document can be found in the metadata folder
+* Data cannot be uploaded due to licensing but the metadata/data dictionary document can be found in the metadata folder (birdlife_species_list)
+
+
+## **Important Bird Areas (IBAs) Site Boundaries**
+
+
+
+* [https://datazone.birdlife.org/contact-us/request-our-data](https://datazone.birdlife.org/contact-us/request-our-data) 
+* Acquired through BirdLife’s data request form
+* Data cannot be uploaded due to licensing but the metadata/data dictionary document can be found in the metadata folder (SitesMetaData September 2025)
+
+
+## **All GBIF Data**
+* A small portion of the GBIF Data - All Bird Observations in Countries in Which AP Manages Land (2015-2025) dataset has been uploaded for reference
+* These datasets are too large to be uploaded in their entirety but they are publicly available for download
 
 
 ## **GBIF Data - All Bird Observations in Countries in Which AP Manages Land (2015-2025)**
@@ -191,9 +205,3 @@ Data for this project was acquired from the following sources. Some sources used
 * GBIF.org (23 March 2026) GBIF Occurrence Download [https://doi.org/10.15468/dl.xcb2g8](https://doi.org/10.15468/dl.xcb2g8) 
 
 
-## **Important Bird Areas (IBAs) Site Boundaries**
-
-
-
-* [https://datazone.birdlife.org/contact-us/request-our-data](https://datazone.birdlife.org/contact-us/request-our-data) 
-* Acquired through BirdLife’s data request form
