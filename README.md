@@ -4,6 +4,11 @@
 ## Examining Habitat Integrity, Land Use, and the Value of the African Parks Network for at Risk Migratory Bird Species Across the African Continent
 
 
+## Summary
+
+My project utilized geospatial and species occurrence data to identify the bird species present within the African Parks (AP) protected land network; examine seasonal land use of migratory bird species across Africa, Europe, and Asia; and gain insight into long term habitat integrity for at-risk migratory bird species. My research found that AP provides habitat for 1,155 bird species across our parks. Additionally, across the four study species I selected, 18-27% of their habitat is protected across the African continent. Knowing when and where these species occur in our parks gives us a basis to conduct more targeted surveys of their populations, and allows us to better prioritize them in land management decisions. Ultimately, these further actions can help take pressure off these struggling species and give them a better chance at future success.
+
+
 # **<span style="text-decoration:underline;">Background</span>**
 
 African Parks (AP) is a non-profit conservation organization and NGO that takes on responsibility for the long-term management of protected areas in partnership with governments and local communities.<sup>1</sup> African Parks manages 26 protected areas in 13 countries covering over 20 million hectares in Angola, Benin, Central African Republic, Chad, the Democratic Republic of Congo, Ethiopia, Malawi, Mozambique, the Republic of Congo, South Sudan, Rwanda, Zambia and Zimbabwe.<sup>1</sup> 
