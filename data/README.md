@@ -73,6 +73,7 @@ Data for this project was acquired from the following sources. Some sources used
 ## **All GBIF Data**
 * A small portion of the GBIF Data - All Bird Observations in Countries in Which AP Manages Land (2015-2025) dataset has been uploaded for reference
 * These datasets are too large to be uploaded in their entirety but they are publicly available for download
+* *Location*: raw_data
 
 
 ## **GBIF Data - All Bird Observations in Countries in Which AP Manages Land (2015-2025)**
