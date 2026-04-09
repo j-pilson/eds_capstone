@@ -12,6 +12,15 @@ The goal of this project is to examine the value of the AP network of protected 
 
 This project mainly focuses on long term habitat integrity for migratory bird species in Africa. While habitat loss exacerbates extinction risk for any species, migratory species are often more seriously impacted due to their reliance on both long term habitat (in breeding and non-breeding/over-wintering areas), and short term habitat (stop over points). Habitat loss throughout the migration path may result in reductions in population size and fecundity due to increased impact of density-dependent factors such as disease, intraspecific competition, and predation.<sup>3</sup> Loss or degradation of suitable stopover habitat during their passage between breeding and non-breeding habitat can also lead to more birds dying enroute, and have serious impacts on nesting success when or if the birds do reach their breeding grounds.<sup>4</sup> Often times, birds in transit to breeding habitat already face time constraints to reach their destination, establish territory, mate, and hatch and raise young.<sup>4</sup> If a bird arrives late, or in poor health/condition, it can significantly impact their ability reproduce successfully.<sup>4</sup> Lastly, disturbance or destruction of breeding habitat during nesting season can lead to nests being abandoned.<sup>5</sup> All of these factors contribute to significant population declines among these migratory species.
 
+Four migratory species that occur within AP parks were selected for this project:
+* Steppe Eagle (*Aquila nipalensis*) - Endangered
+* Malagasy Pond Heron (*Ardeola idae*) - Endangered
+* Rüppell's Vulture (*Gyps rueppellii*) - Critically Endangered
+* Egyptian Vulture (*Neophron percnopterus*) - Endangered
+
+
+
+
 # **<span style="text-decoration:underline;">Data Sources</span>**
 
 Data for this project was acquired from the following sources. Some sources used do not allow for raw data to be published publicly, others are too large to be uploaded to GitHub in their entirety. Small, synthetic datasets and/or associated meta data and data dictionaries have been supplied in these cases.
