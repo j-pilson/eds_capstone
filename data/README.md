@@ -30,7 +30,8 @@ Data for this project was acquired from the following sources. Some sources used
     * Each continent/region was downloaded separately 
         * **Africa –** [https://www.protectedplanet.net/region/AF](https://www.protectedplanet.net/region/AF)
         * **Europe –** [https://www.protectedplanet.net/region/EU](https://www.protectedplanet.net/region/EU)
-        * **Asia & Pacific –** [https://www.protectedplanet.net/region/AS](https://www.protectedplanet.net/region/AS) 
+        * **Asia & Pacific –** [https://www.protectedplanet.net/region/AS](https://www.protectedplanet.net/region/AS)
+    * *Location*: raw_data 
 
 
 ## **BirdLife Range Data**
